@@ -91,6 +91,11 @@
   .card p{font-size:.93rem;color:var(--sub)}
   @media(max-width:880px){.features{grid-template-columns:1fr 1fr}}
   @media(max-width:560px){.features{grid-template-columns:1fr}}
+  .tag{display:inline-block;font-size:.72rem;font-weight:800;padding:.16rem .6rem;border-radius:999px;
+    margin-left:.3rem;vertical-align:middle;white-space:nowrap}
+  .tag.gold{background:linear-gradient(135deg,#FFD27A,#FFB300);color:#5A3D00}
+  .tag.free{background:rgba(46,184,114,.16);color:#177A4C}
+  .note-center{text-align:center;color:var(--sub);font-size:.9rem;margin-top:20px}
 
   /* gallery */
   .gallery{display:flex;gap:22px;overflow-x:auto;padding:8px 22px 26px;scroll-snap-type:x mandatory}
@@ -140,6 +145,7 @@
     <a class="brand" href="#top"><img src="icon.png" alt="">仲良し家計簿</a>
     <nav class="links">
       <a href="#features">特徴</a>
+      <a href="#types">種類</a>
       <a href="#screens">画面</a>
       <a href="#plans">料金</a>
       <a class="btn sm cta" href="https://apps.apple.com/jp/app/%E4%BB%B2%E8%89%AF%E3%81%97%E5%AE%B6%E8%A8%88%E7%B0%BF/id6776315974">入手</a>
@@ -183,6 +189,34 @@
       <div class="card reveal"><div class="ic">💰</div><h3>予算管理</h3><p>カテゴリごとに予算を決めて使いすぎを防止。削除した取引もゴミ箱から復元できます。</p></div>
       <div class="card reveal"><div class="ic">🔁</div><h3>データの持ち運び</h3><p>取引・カレンダーのCSVエクスポート／インポート。他の家計簿アプリからの取り込みも。</p></div>
     </div>
+  </div>
+</section>
+
+<section id="types">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kbd">Types</div>
+      <h2>使い方に合わせて選べる、3つの家計簿</h2>
+      <p>ふたりにも、大人数にも、みまもりにも。</p>
+    </div>
+    <div class="features">
+      <div class="card reveal">
+        <div class="ic">💞</div>
+        <h3>ペア家計簿 <span class="tag free">無料</span></h3>
+        <p>2人まで、全データを共有する基本の家計簿。まずはここから、ふたりで始められます。</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic">👥</div>
+        <h3>団体家計簿 <span class="tag gold">ゴールドで作成</span></h3>
+        <p>最大50人まで参加できる、サークルや団体の会計向けの家計簿です。</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic">🛡️</div>
+        <h3>みまもり家計簿 <span class="tag gold">ゴールドで作成</span></h3>
+        <p>参加者は自分のデータだけ、管理者は全員分を確認。離れて暮らす家族のみまもりに。</p>
+      </div>
+    </div>
+    <p class="note-center reveal">※「ペア家計簿」は無料の基本の家計簿です。「団体・みまもり家計簿」など追加の家計簿は、参加・記録がシルバー以上、新規作成・編集がゴールドプランでご利用いただけます。</p>
   </div>
 </section>
 
