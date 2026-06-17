@@ -24,7 +24,11 @@
     font-family:-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif;
     color:var(--ink);background:var(--bg);line-height:1.8;-webkit-font-smoothing:antialiased;
     overflow-x:hidden;
+    /* 日本語を文節（フレーズ）境界で折り返し、中途半端な改行を防ぐ */
+    word-break:auto-phrase;line-break:strict;
   }
+  h1,h2,h3,.lead,.sec-head p{text-wrap:balance}
+  .card p,.plan li,.note,.note-center,.band p,.lead{text-wrap:pretty}
   a{color:inherit;text-decoration:none}
   .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
 
