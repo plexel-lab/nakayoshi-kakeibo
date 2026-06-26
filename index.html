@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>仲良し家計簿 — 家族・カップルで共有する家計簿</title>
-<meta name="description" content="家族やカップルでひとつの家計簿を共有。招待コードを送るだけでリアルタイム同期。レシートは端末内OCRでかざすだけ。iPhone対応、無料。">
+<meta name="description" content="家族やカップルでひとつの家計簿を共有。招待コードを送るだけでリアルタイム同期。Siriで音声入力、AIレシート読み取り、8種類以上のアプリからCSVインポート。iPhone対応、無料。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="仲良し家計簿">
-<meta property="og:description" content="家族・カップルでひとつの家計簿を共有。招待コードを送るだけでリアルタイムに同期。">
+<meta property="og:description" content="家族・カップルでひとつの家計簿を共有。Siri音声入力・AIレシート・カレンダー・グラフ。招待コードを送るだけでリアルタイムに同期。">
 <meta property="og:image" content="https://plexel-lab.github.io/nakayoshi-kakeibo/ogp.png">
 <meta property="og:url" content="https://plexel-lab.github.io/nakayoshi-kakeibo/">
 <meta name="twitter:card" content="summary_large_image">
@@ -116,6 +116,7 @@
   .card p{font-size:.93rem;color:var(--sub)}
   @media(max-width:880px){.features{grid-template-columns:1fr 1fr}}
   @media(max-width:560px){.features{grid-template-columns:1fr}}
+  @media(min-width:881px){.features{grid-template-columns:repeat(3,1fr)}}
   .tag{display:inline-block;font-size:.72rem;font-weight:800;padding:.16rem .6rem;border-radius:999px;
     margin-left:.3rem;vertical-align:middle;white-space:nowrap}
   .tag.gold{background:linear-gradient(135deg,#FFD27A,#FFB300);color:#5A3D00}
@@ -169,7 +170,6 @@
   <a class="brand" href="/nakayoshi-kakeibo/"><img src="icon.png" alt=""><span class="bn">仲良し家計簿</span></a>
   <nav class="hdr-nav">
     <a href="/nakayoshi-kakeibo-privacy/">プライバシー</a>
-    <a href="/nakayoshi-kakeibo-privacy/terms.html">利用規約</a>
     <a href="/nakayoshi-kakeibo-privacy/support.html">サポート</a>
     <a class="hdr-cta" href="https://apps.apple.com/jp/app/%E4%BB%B2%E8%89%AF%E3%81%97%E5%AE%B6%E8%A8%88%E7%B0%BF/id6776315974">入手</a>
   </nav>
@@ -182,7 +182,7 @@
     <div class="reveal">
       <span class="eyebrow">🐷 家族・カップルの家計簿</span>
       <h1>ふたりで、<br><span class="g">ひとつの家計簿。</span></h1>
-      <p class="lead">招待コードを送るだけで、<wbr>パートナーと<wbr>同じ家計簿に<wbr>記録・閲覧。<wbr>入力した瞬間に<wbr>リアルタイムで<wbr>同期します。<wbr>レシートは<wbr>端末内OCRで<wbr>かざすだけ。</p>
+      <p class="lead">招待コードを送るだけで、<wbr>パートナーと<wbr>同じ家計簿に<wbr>記録・閲覧。<wbr>入力した瞬間に<wbr>リアルタイムで<wbr>同期します。<wbr>Siriで音声入力、<wbr>AIレシート読み取りも。</p>
       <div class="cta-row">
         <a class="btn" href="https://apps.apple.com/jp/app/%E4%BB%B2%E8%89%AF%E3%81%97%E5%AE%B6%E8%A8%88%E7%B0%BF/id6776315974">App Store で入手</a>
         <a class="ghost" href="#features">機能を見る →</a>
@@ -204,12 +204,15 @@
       <p>毎日の家計管理を、<wbr>ふたりで簡単に。</p>
     </div>
     <div class="features">
-      <div class="card reveal"><div class="ic">🤝</div><h3>家族・カップルで共有</h3><p>招待コード・<wbr>QRコード・<wbr>リンクで<wbr>かんたん招待。<wbr>入力した収支は<wbr>リアルタイムに<wbr>同期されます。</p></div>
-      <div class="card reveal"><div class="ic">🧾</div><h3>レシートはかざすだけ</h3><p>端末内OCRで<wbr>金額や日付を<wbr>自動入力。<wbr>通信も<wbr>アカウント登録も<wbr>不要で、<wbr>その場ですぐ<wbr>読み取り。</p></div>
-      <div class="card reveal"><div class="ic">📊</div><h3>3つの表示で見える化</h3><p>リスト・<wbr>グラフ・<wbr>カレンダー。<wbr>推移・<wbr>月別・<wbr>年別の<wbr>カテゴリ内訳まで<wbr>ひと目で。</p></div>
-      <div class="card reveal"><div class="ic">📅</div><h3>共有カレンダー</h3><p>家族の予定を<wbr>共有。<wbr>記念日や<wbr>旅行までの<wbr>残り日数を<wbr>カウントダウンで<wbr>表示。</p></div>
-      <div class="card reveal"><div class="ic">💰</div><h3>予算管理</h3><p>カテゴリごとに<wbr>予算を決めて<wbr>使いすぎを防止。<wbr>削除した取引も<wbr>ゴミ箱から<wbr>復元できます。</p></div>
-      <div class="card reveal"><div class="ic">🔁</div><h3>データの持ち運び</h3><p>取引・<wbr>カレンダーの<wbr>CSVエクスポート／<wbr>インポート。<wbr>他の家計簿アプリ<wbr>からの取り込みも。</p></div>
+      <div class="card reveal"><div class="ic">🤝</div><h3>家族・カップルで共有</h3><p>招待コード・<wbr>QRコード・<wbr>LINEリンクで<wbr>かんたん招待。<wbr>入力した収支は<wbr>リアルタイムに<wbr>同期されます。</p></div>
+      <div class="card reveal"><div class="ic">🗣️</div><h3>Siriで音声入力</h3><p>「家計簿に入力して」と<wbr>話すだけ。<wbr>カテゴリ・金額・<wbr>品目をまとめて<wbr>ハンズフリーで<wbr>記録できます。</p></div>
+      <div class="card reveal"><div class="ic">🧾</div><h3>レシート読み取り</h3><p>端末内OCRで<wbr>かざすだけ。<wbr>シルバー以上なら<wbr>AIが品目・金額・<wbr>カテゴリを<wbr>高精度で自動認識。</p></div>
+      <div class="card reveal"><div class="ic">📊</div><h3>グラフで見える化</h3><p>推移・月別・年別の<wbr>カテゴリ内訳を<wbr>グラフで表示。<wbr>メンバー別の<wbr>絞り込みも<wbr>できます。</p></div>
+      <div class="card reveal"><div class="ic">📅</div><h3>共有カレンダー</h3><p>家族の予定を共有。<wbr>記念日までの<wbr>カウントダウン、<wbr>月表示・<wbr>週表示の<wbr>切り替えも。</p></div>
+      <div class="card reveal"><div class="ic">💰</div><h3>予算管理</h3><p>カテゴリごとに<wbr>予算を設定。<wbr>毎月の繰り返しにも<wbr>対応。<wbr>電卓機能で<wbr>利率計算も。</p></div>
+      <div class="card reveal"><div class="ic">🎨</div><h3>カテゴリ自由自在</h3><p>68種類のアイコンと<wbr>36色のカラーで<wbr>自分だけの<wbr>カテゴリを<wbr>自由にカスタマイズ。</p></div>
+      <div class="card reveal"><div class="ic">🔁</div><h3>CSVインポート</h3><p>8種類以上の<wbr>家計簿アプリから<wbr>CSVインポート。<wbr>列マッピングや<wbr>エラー修正も<wbr>アプリ内で完結。</p></div>
+      <div class="card reveal"><div class="ic">🛡️</div><h3>テンプレート入力</h3><p>よく使う取引を<wbr>テンプレート登録。<wbr>ワンタップで入力、<wbr>繰り返しの<wbr>自動入力にも<wbr>対応。</p></div>
     </div>
   </div>
 </section>
@@ -249,10 +252,12 @@
     <p>シンプルで見やすい、毎日ひらきたくなるデザイン。</p>
   </div>
   <div class="gallery reveal">
+    <div class="shot"><div class="phone"><img src="shot-add.png" alt=""></div><div class="cap">かんたん入力</div></div>
     <div class="shot"><div class="phone"><img src="shot-list.png" alt=""></div><div class="cap">取引リスト</div></div>
     <div class="shot"><div class="phone"><img src="shot-graph.png" alt=""></div><div class="cap">グラフ</div></div>
     <div class="shot"><div class="phone"><img src="shot-calendar.png" alt=""></div><div class="cap">カレンダー</div></div>
-    <div class="shot"><div class="phone"><img src="shot-add.png" alt=""></div><div class="cap">かんたん入力</div></div>
+    <div class="shot"><div class="phone"><img src="shot-siri.jpg" alt=""></div><div class="cap">Siri音声入力</div></div>
+    <div class="shot"><div class="phone"><img src="shot-receipt.png" alt=""></div><div class="cap">レシート読み取り</div></div>
     <div class="shot"><div class="phone"><img src="shot-paywall.png" alt=""></div><div class="cap">料金プラン</div></div>
   </div>
 </section>
@@ -267,16 +272,16 @@
     <div class="plans">
       <div class="plan reveal">
         <h3>ブロンズ</h3><div class="price">無料</div>
-        <ul><li>家計簿1つ（2人まで共有）</li><li>カレンダー 週3件まで</li><li>カウントダウン 最大2件</li><li>広告あり</li></ul>
+        <ul><li>家計簿1つ（2人まで共有）</li><li>端末内レシートOCR</li><li>カレンダー 週3件まで</li><li>カウントダウン 最大2件</li><li>広告あり</li></ul>
       </div>
       <div class="plan feat reveal">
         <span class="badge">人気</span>
         <h3>シルバー</h3><div class="price">月額 / 年額</div>
-        <ul><li>広告非表示</li><li>カレンダー無制限</li><li>カウントダウン 最大8件</li><li>追加の家計簿に参加・記録</li></ul>
+        <ul><li>広告非表示</li><li>AI高精度レシート（月50枚）</li><li>カレンダー無制限</li><li>カウントダウン 最大8件</li><li>追加の家計簿に参加・記録</li></ul>
       </div>
       <div class="plan reveal">
         <h3>ゴールド</h3><div class="price">月額 / 年額</div>
-        <ul><li>シルバーの全機能</li><li>追加の家計簿を編集・削除</li><li>家計簿を複数作成</li><li>カウントダウン無制限</li></ul>
+        <ul><li>シルバーの全機能</li><li>AI高精度レシート（月100枚）</li><li>家計簿を複数作成・編集</li><li>カウントダウン無制限</li></ul>
       </div>
     </div>
   </div>
